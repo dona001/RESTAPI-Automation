@@ -34,7 +34,7 @@ public class GetAPITest extends TestBase{
 	
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void getTest() throws ClientProtocolException, IOException {
 		restClient = new RestClient();
 		closebleHttpResponse = restClient.get(url);
